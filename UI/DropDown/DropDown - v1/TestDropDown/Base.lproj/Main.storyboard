@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zCr-xm-sfa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestDropDown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egT-dQ-Be9">
+                                <rect key="frame" x="87" y="94" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7Hm-KI-e2v"/>
+                                    <constraint firstAttribute="width" constant="240" id="CYA-bO-5mF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="egT-dQ-Be9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Mg-0Y-vO3"/>
+                            <constraint firstItem="egT-dQ-Be9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="zhW-1C-MIO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewContent" destination="egT-dQ-Be9" id="yvv-rC-iLD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="98"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="rEA-5u-j5w">
+            <objects>
+                <viewController id="Kb7-3J-fen" customClass="ViewController2" customModule="TestDropDown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hyd-wl-zB9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yNX-bt-kae">
+                                <rect key="frame" x="10" y="54" width="394" height="414"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTz-6h-H8i">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.55248651649746194" green="0.55248651649746194" blue="0.55248651649746194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="WME-Ez-O6s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Select Fruit">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnSelectFruitTapped:" destination="Kb7-3J-fen" eventType="touchUpInside" id="20M-qy-8jN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E8-G1-ecB">
+                                        <rect key="frame" x="0.0" y="52" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.18255014296153113" green="0.63009597081218272" blue="0.52730403224993483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Qex-qi-lMX"/>
+                                        </constraints>
+                                        <state key="normal" title="Apple">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFruitTapped:" destination="Kb7-3J-fen" eventType="touchUpInside" id="QMk-Og-FdX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sZ-RM-rTQ">
+                                        <rect key="frame" x="0.0" y="104" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.18255014296153113" green="0.63009597081218272" blue="0.52730403224993483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Wng-ml-PCR"/>
+                                        </constraints>
+                                        <state key="normal" title="Banana">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFruitTapped:" destination="Kb7-3J-fen" eventType="touchUpInside" id="MbR-YJ-JkU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7c-uC-PE9">
+                                        <rect key="frame" x="0.0" y="156" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.18255014296153113" green="0.63009597081218272" blue="0.52730403224993483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SsF-rx-ctc"/>
+                                        </constraints>
+                                        <state key="normal" title="Kiwi">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFruitTapped:" destination="Kb7-3J-fen" eventType="touchUpInside" id="jYP-cu-Tx9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imf-w3-s2h">
+                                        <rect key="frame" x="0.0" y="208" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.18255014296153113" green="0.63009597081218272" blue="0.52730403224993483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ynv-6O-JHS"/>
+                                        </constraints>
+                                        <state key="normal" title="Orange">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFruitTapped:" destination="Kb7-3J-fen" eventType="touchUpInside" id="9yP-KN-dKL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kk-Rp-IXs">
+                                        <rect key="frame" x="0.0" y="260" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.18255014296153113" green="0.63009597081218272" blue="0.52730403224993483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="66I-af-v4Y"/>
+                                        </constraints>
+                                        <state key="normal" title="Blue Beery">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFruitTapped:" destination="Kb7-3J-fen" eventType="touchUpInside" id="TmN-op-LBW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfO-sM-Gde">
+                                        <rect key="frame" x="0.0" y="312" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.18255014296153113" green="0.63009597081218272" blue="0.52730403224993483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uyJ-Kp-Xzf"/>
+                                        </constraints>
+                                        <state key="normal" title="Peach">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFruitTapped:" destination="Kb7-3J-fen" eventType="touchUpInside" id="2aM-Jm-VgA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXO-xm-hsE">
+                                        <rect key="frame" x="0.0" y="364" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.18255014296153113" green="0.63009597081218272" blue="0.52730403224993483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ezf-Oa-5Kt"/>
+                                        </constraints>
+                                        <state key="normal" title="Guava">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFruitTapped:" destination="Kb7-3J-fen" eventType="touchUpInside" id="Slv-hu-8Is"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="imf-w3-s2h" firstAttribute="leading" secondItem="yNX-bt-kae" secondAttribute="leading" id="1bp-QR-mNJ"/>
+                                    <constraint firstItem="SXO-xm-hsE" firstAttribute="leading" secondItem="yNX-bt-kae" secondAttribute="leading" id="8le-t1-CiH"/>
+                                    <constraint firstAttribute="trailing" secondItem="vTz-6h-H8i" secondAttribute="trailing" id="JTo-R1-0jg"/>
+                                    <constraint firstItem="5sZ-RM-rTQ" firstAttribute="leading" secondItem="yNX-bt-kae" secondAttribute="leading" id="MKq-VM-yqW"/>
+                                    <constraint firstItem="O7c-uC-PE9" firstAttribute="leading" secondItem="yNX-bt-kae" secondAttribute="leading" id="Ptg-gq-TIu"/>
+                                    <constraint firstItem="jfO-sM-Gde" firstAttribute="leading" secondItem="yNX-bt-kae" secondAttribute="leading" id="TJ8-Ub-t3k"/>
+                                    <constraint firstAttribute="trailing" secondItem="imf-w3-s2h" secondAttribute="trailing" id="UBI-dV-JBM"/>
+                                    <constraint firstItem="vTz-6h-H8i" firstAttribute="leading" secondItem="yNX-bt-kae" secondAttribute="leading" id="Vud-cv-e1w"/>
+                                    <constraint firstAttribute="trailing" secondItem="jfO-sM-Gde" secondAttribute="trailing" id="YD6-vx-Tvc"/>
+                                    <constraint firstAttribute="trailing" secondItem="SXO-xm-hsE" secondAttribute="trailing" id="a5u-1z-sIB"/>
+                                    <constraint firstAttribute="trailing" secondItem="O7c-uC-PE9" secondAttribute="trailing" id="cUP-Tq-WRz"/>
+                                    <constraint firstItem="8E8-G1-ecB" firstAttribute="leading" secondItem="yNX-bt-kae" secondAttribute="leading" id="dsP-qE-9Od"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Kk-Rp-IXs" secondAttribute="trailing" id="eWr-hU-tWC"/>
+                                    <constraint firstAttribute="trailing" secondItem="8E8-G1-ecB" secondAttribute="trailing" id="piN-T3-elC"/>
+                                    <constraint firstItem="7Kk-Rp-IXs" firstAttribute="leading" secondItem="yNX-bt-kae" secondAttribute="leading" id="r0a-8d-65H"/>
+                                    <constraint firstAttribute="trailing" secondItem="5sZ-RM-rTQ" secondAttribute="trailing" id="rvK-Md-e6P"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="are-yh-jec"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="are-yh-jec" firstAttribute="trailing" secondItem="yNX-bt-kae" secondAttribute="trailing" constant="10" id="DzA-YC-QEq"/>
+                            <constraint firstItem="yNX-bt-kae" firstAttribute="top" secondItem="are-yh-jec" secondAttribute="top" constant="10" id="PEw-8s-etN"/>
+                            <constraint firstItem="yNX-bt-kae" firstAttribute="leading" secondItem="are-yh-jec" secondAttribute="leading" constant="10" id="VFv-Fd-o7R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnSelectFruit" destination="vTz-6h-H8i" id="z5I-Ah-qYn"/>
+                        <outletCollection property="btnFruit" destination="8E8-G1-ecB" collectionClass="NSMutableArray" id="DZX-N8-sk6"/>
+                        <outletCollection property="btnFruit" destination="5sZ-RM-rTQ" collectionClass="NSMutableArray" id="b7t-Gz-2Di"/>
+                        <outletCollection property="btnFruit" destination="O7c-uC-PE9" collectionClass="NSMutableArray" id="Myk-p2-xK2"/>
+                        <outletCollection property="btnFruit" destination="imf-w3-s2h" collectionClass="NSMutableArray" id="dSd-qt-m8U"/>
+                        <outletCollection property="btnFruit" destination="7Kk-Rp-IXs" collectionClass="NSMutableArray" id="FOP-WE-LHA"/>
+                        <outletCollection property="btnFruit" destination="jfO-sM-Gde" collectionClass="NSMutableArray" id="vL6-sd-mWt"/>
+                        <outletCollection property="btnFruit" destination="SXO-xm-hsE" collectionClass="NSMutableArray" id="WWi-FH-Mwn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swE-V8-yf9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="98"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="SxI-MR-r1u">
+            <objects>
+                <viewController id="zCr-xm-sfa" customClass="ViewController3" customModule="TestDropDown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8jA-iK-ElL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Country" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NR2-bm-aKm">
+                                <rect key="frame" x="20" y="436" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EdW-ql-1Mo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NR2-bm-aKm" firstAttribute="centerY" secondItem="EdW-ql-1Mo" secondAttribute="centerY" id="4KL-D5-kjv"/>
+                            <constraint firstItem="NR2-bm-aKm" firstAttribute="centerX" secondItem="EdW-ql-1Mo" secondAttribute="centerX" id="izT-If-Rkr"/>
+                            <constraint firstItem="NR2-bm-aKm" firstAttribute="width" secondItem="8jA-iK-ElL" secondAttribute="width" constant="-40" id="l7T-bh-1Ch"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtCountry" destination="NR2-bm-aKm" id="nqN-Jd-Xa6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePN-zM-rcs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1510" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
