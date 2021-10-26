@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatVideoYourCell" rowHeight="288" id="KGk-i7-Jjw" customClass="ChatVideoYourCell" customModule="TableView_Message" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="288"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="288"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ve4-Gb-vdM">
+                        <rect key="frame" x="8" y="8" width="216" height="166"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="973-8m-baJ">
+                                <rect key="frame" x="8" y="8" width="200" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="973-8m-baJ" secondAttribute="height" multiplier="4/3" id="5vX-HK-MxV"/>
+                                    <constraint firstAttribute="width" constant="200" id="OYP-tm-ZkO"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwq-9Z-m48">
+                                <rect key="frame" x="93" y="68" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MTn-pD-aDD"/>
+                                    <constraint firstAttribute="width" constant="30" id="NoX-mf-fzu"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="btnPlayTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YT9-0R-um4"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jfa-N2-qTp">
+                                <rect key="frame" x="13" y="155" width="190" height="3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="zcN-sU-mBR"/>
+                                </constraints>
+                                <color key="progressTintColor" systemColor="linkColor"/>
+                                <color key="trackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-rv-j5a">
+                                <rect key="frame" x="185" y="135" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Nf1-se-gFd"/>
+                                    <constraint firstAttribute="height" constant="20" id="rbB-Sw-k8i"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrow.up.left.and.down.right.and.arrow.up.right.and.down.left" catalog="system"/>
+                                <connections>
+                                    <action selector="btnExtendTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZY5-Fb-j1u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cwq-9Z-m48" firstAttribute="centerY" secondItem="973-8m-baJ" secondAttribute="centerY" id="AJ8-Aq-0YQ"/>
+                            <constraint firstItem="Cwq-9Z-m48" firstAttribute="centerX" secondItem="973-8m-baJ" secondAttribute="centerX" id="DXa-oq-0dh"/>
+                            <constraint firstAttribute="bottom" secondItem="973-8m-baJ" secondAttribute="bottom" constant="8" id="FaV-lN-LDE"/>
+                            <constraint firstAttribute="bottom" secondItem="Quu-rv-j5a" secondAttribute="bottom" constant="11" id="Ko5-yf-8jf"/>
+                            <constraint firstAttribute="bottom" secondItem="Jfa-N2-qTp" secondAttribute="bottom" constant="8" id="Qys-GD-B1z"/>
+                            <constraint firstItem="Jfa-N2-qTp" firstAttribute="width" secondItem="973-8m-baJ" secondAttribute="width" constant="-10" id="ROh-kl-X9h"/>
+                            <constraint firstAttribute="trailing" secondItem="Quu-rv-j5a" secondAttribute="trailing" constant="11" id="X9m-iv-WD2"/>
+                            <constraint firstItem="973-8m-baJ" firstAttribute="leading" secondItem="Ve4-Gb-vdM" secondAttribute="leading" constant="8" id="ZMi-UQ-ASl"/>
+                            <constraint firstItem="Jfa-N2-qTp" firstAttribute="centerX" secondItem="973-8m-baJ" secondAttribute="centerX" id="dgk-FL-8Wo"/>
+                            <constraint firstAttribute="trailing" secondItem="973-8m-baJ" secondAttribute="trailing" constant="8" id="ixG-Ov-CYA"/>
+                            <constraint firstItem="973-8m-baJ" firstAttribute="top" secondItem="Ve4-Gb-vdM" secondAttribute="top" constant="8" id="vFl-T7-36W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ve4-Gb-vdM" secondAttribute="trailing" constant="8" id="Wmz-eQ-4eg"/>
+                    <constraint firstItem="Ve4-Gb-vdM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="bxo-AM-UhV"/>
+                    <constraint firstItem="Ve4-Gb-vdM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="g9v-PP-vkL"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ve4-Gb-vdM" secondAttribute="bottom" constant="8" id="hCU-Mq-2XG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnExtend" destination="Quu-rv-j5a" id="Gc7-jg-eZc"/>
+                <outlet property="btnPlay" destination="Cwq-9Z-m48" id="MvE-OQ-qTN"/>
+                <outlet property="progressView" destination="Jfa-N2-qTp" id="tN1-Fp-BOA"/>
+                <outlet property="viewVideo" destination="973-8m-baJ" id="aCq-zk-y8P"/>
+            </connections>
+            <point key="canvasLocation" x="-220.28985507246378" y="91.071428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.up.left.and.down.right.and.arrow.up.right.and.down.left" catalog="system" width="128" height="115"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
