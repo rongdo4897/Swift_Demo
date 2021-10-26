@@ -1,0 +1,22 @@
+1. Mô tả
+
+- 1 dạng demo đơn giản cho module chat với các loại cell ứng với các tính năng
+
+
+2. Bao gồm
+- tin nhắn dạng text
+- tin nhắn dạng video
+_ tin nhắn dạng link
+_ ...
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 

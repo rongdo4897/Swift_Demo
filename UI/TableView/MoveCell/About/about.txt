@@ -1,0 +1,18 @@
+1. Mô tả
+
+- Di chuyển vị trí của cell trong tableview
+
+2. Bao gồm
+
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
