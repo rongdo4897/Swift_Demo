@@ -1,0 +1,18 @@
+1. Mô tả
+
+- Mở rộng cell trong tableview khi click vào cell đó
+
+2. Bao gồm
+- trong mỗi cell của tableview chứa 1 tableview khác
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
