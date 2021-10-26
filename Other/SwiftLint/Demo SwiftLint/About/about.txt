@@ -1,0 +1,26 @@
+1. Mô tả
+
+- Sử dụng thư viện SwiftLint để quy định các luật trong project
+
+2. Bao gồm
+- Trong tag Build Phase -> New Run Script Phase -> Shell
+			"${PODS_ROOT}/SwiftLint/swiftlint"
+
+- tạo file .swiftlint.yml và thêm các luật, trong đó:
+	+ disabled_rules: # Quy tắc bị loại trừ
+	+ opt_in_rules: # Các quy tắc bị tắt được bật
+	+ analyzer_rules: # Các luật được thực thi trong mã lệnh ( ví dụ self. )
+	+ excluded: # Các đường dẫn bỏ qua không thực thi trong khi chạy. Được ưu tiên hơn so với included`.
+	+ reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube, markdown)
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
