@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Bao gồm các view đc add vào superview , ban đầu nó chỉ lộ 1 phần sau đó sẽ hiển thị hết khi tiến hành kéo
+
+
+2. Bao gồm
+- pod 'FloatingPanel'
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 

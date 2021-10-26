@@ -1,0 +1,16 @@
+PODS:
+  - SCLAlertView (0.8)
+
+DEPENDENCIES:
+  - SCLAlertView
+
+SPEC REPOS:
+  trunk:
+    - SCLAlertView
+
+SPEC CHECKSUMS:
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+
+PODFILE CHECKSUM: 9e3067a70747a94fcd45a5bf5f6e250efa38c318
+
+COCOAPODS: 1.10.0

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardViewTopController" customModule="CardView_Animation" customModuleProvider="target">
+            <connections>
+                <outlet property="tblLocation" destination="Cmv-s7-1L7" id="xr3-dk-5Pv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHandleArea" destination="g1x-rj-I1U" id="ueR-NU-fRj"/>
+                <outlet property="viewLineHeader" destination="Yc6-zb-gZT" id="L5s-gy-EPn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="533"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1x-rj-I1U">
+                    <rect key="frame" x="0.0" y="468" width="487" height="65"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yc6-zb-gZT">
+                            <rect key="frame" x="208.5" y="27.5" width="70" height="10"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="2JG-8r-jNM"/>
+                                <constraint firstAttribute="width" constant="70" id="vju-AA-SfJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="4Q6-qJ-W9e"/>
+                        <constraint firstItem="Yc6-zb-gZT" firstAttribute="centerX" secondItem="g1x-rj-I1U" secondAttribute="centerX" id="LAV-Tp-zgN"/>
+                        <constraint firstItem="Yc6-zb-gZT" firstAttribute="centerY" secondItem="g1x-rj-I1U" secondAttribute="centerY" id="fja-sp-VjR"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cmv-s7-1L7">
+                    <rect key="frame" x="0.0" y="0.0" width="487" height="468"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Cmv-s7-1L7" firstAttribute="width" secondItem="g1x-rj-I1U" secondAttribute="width" id="JvP-ms-ZWZ"/>
+                <constraint firstItem="Cmv-s7-1L7" firstAttribute="centerX" secondItem="g1x-rj-I1U" secondAttribute="centerX" id="LwL-7h-I6n"/>
+                <constraint firstItem="Cmv-s7-1L7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kPb-QV-ibw"/>
+                <constraint firstItem="g1x-rj-I1U" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="l3p-Cu-bug"/>
+                <constraint firstItem="g1x-rj-I1U" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="lVy-3o-3WO"/>
+                <constraint firstItem="g1x-rj-I1U" firstAttribute="top" secondItem="Cmv-s7-1L7" secondAttribute="bottom" id="le3-Al-jdv"/>
+                <constraint firstAttribute="bottom" secondItem="g1x-rj-I1U" secondAttribute="bottom" id="yGe-qb-0qF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-144.20289855072465" y="-5.0223214285714279"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
