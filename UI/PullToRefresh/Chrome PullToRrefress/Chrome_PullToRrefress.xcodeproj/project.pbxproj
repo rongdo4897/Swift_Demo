@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A4EF33B2623EA9A00CE968C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF33A2623EA9A00CE968C /* AppDelegate.swift */; };
+		0A4EF33D2623EA9A00CE968C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF33C2623EA9A00CE968C /* SceneDelegate.swift */; };
+		0A4EF33F2623EA9A00CE968C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF33E2623EA9A00CE968C /* ViewController.swift */; };
+		0A4EF3422623EA9A00CE968C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4EF3402623EA9A00CE968C /* Main.storyboard */; };
+		0A4EF3442623EA9D00CE968C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4EF3432623EA9D00CE968C /* Assets.xcassets */; };
+		0A4EF3472623EA9D00CE968C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4EF3452623EA9D00CE968C /* LaunchScreen.storyboard */; };
+		0A4EF35B2623F6E500CE968C /* GoogleRefreshNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF35A2623F6E500CE968C /* GoogleRefreshNode.swift */; };
+		0A4EF36626241EC600CE968C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF36526241EC600CE968C /* UIImageExtension.swift */; };
+		0A4EF3752624312A00CE968C /* ADChromePullToRefreshCenterActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF36C2624312900CE968C /* ADChromePullToRefreshCenterActionView.swift */; };
+		0A4EF3762624312A00CE968C /* ADChromePullToRefreshActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF36D2624312A00CE968C /* ADChromePullToRefreshActionView.swift */; };
+		0A4EF3772624312A00CE968C /* ADChromePullToRefreshState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF36E2624312A00CE968C /* ADChromePullToRefreshState.swift */; };
+		0A4EF3782624312A00CE968C /* ADChromePullToRefreshHighlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF36F2624312A00CE968C /* ADChromePullToRefreshHighlightView.swift */; };
+		0A4EF3792624312A00CE968C /* ADChromePullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF3702624312A00CE968C /* ADChromePullToRefreshView.swift */; };
+		0A4EF37A2624312A00CE968C /* ADChromePullToRefreshRIghtActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF3712624312A00CE968C /* ADChromePullToRefreshRIghtActionView.swift */; };
+		0A4EF37B2624312A00CE968C /* ADChromePullToRefreshLeftActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF3722624312A00CE968C /* ADChromePullToRefreshLeftActionView.swift */; };
+		0A4EF37C2624312A00CE968C /* ADChromePullToRefreshActionViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF3732624312A00CE968C /* ADChromePullToRefreshActionViewType.swift */; };
+		0A4EF37D2624312A00CE968C /* ADChromePullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EF3742624312A00CE968C /* ADChromePullToRefresh.swift */; };
+		1FCB3ADD4EE2B84942A79B40 /* Pods_Chrome_PullToRrefress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC0CB8F8F608706588A68BD /* Pods_Chrome_PullToRrefress.framework */; };
+		62DAFE7226427565001563A7 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DAFE7126427565001563A7 /* ViewController2.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A4EF3372623EA9A00CE968C /* Chrome_PullToRrefress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chrome_PullToRrefress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4EF33A2623EA9A00CE968C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A4EF33C2623EA9A00CE968C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0A4EF33E2623EA9A00CE968C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A4EF3412623EA9A00CE968C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A4EF3432623EA9D00CE968C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A4EF3462623EA9D00CE968C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A4EF3482623EA9D00CE968C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4EF35A2623F6E500CE968C /* GoogleRefreshNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleRefreshNode.swift; sourceTree = "<group>"; };
+		0A4EF36526241EC600CE968C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		0A4EF36C2624312900CE968C /* ADChromePullToRefreshCenterActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADChromePullToRefreshCenterActionView.swift; sourceTree = "<group>"; };
+		0A4EF36D2624312A00CE968C /* ADChromePullToRefreshActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADChromePullToRefreshActionView.swift; sourceTree = "<group>"; };
+		0A4EF36E2624312A00CE968C /* ADChromePullToRefreshState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADChromePullToRefreshState.swift; sourceTree = "<group>"; };
+		0A4EF36F2624312A00CE968C /* ADChromePullToRefreshHighlightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADChromePullToRefreshHighlightView.swift; sourceTree = "<group>"; };
+		0A4EF3702624312A00CE968C /* ADChromePullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADChromePullToRefreshView.swift; sourceTree = "<group>"; };
+		0A4EF3712624312A00CE968C /* ADChromePullToRefreshRIghtActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADChromePullToRefreshRIghtActionView.swift; sourceTree = "<group>"; };
+		0A4EF3722624312A00CE968C /* ADChromePullToRefreshLeftActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADChromePullToRefreshLeftActionView.swift; sourceTree = "<group>"; };
+		0A4EF3732624312A00CE968C /* ADChromePullToRefreshActionViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADChromePullToRefreshActionViewType.swift; sourceTree = "<group>"; };
+		0A4EF3742624312A00CE968C /* ADChromePullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADChromePullToRefresh.swift; sourceTree = "<group>"; };
+		2CC0CB8F8F608706588A68BD /* Pods_Chrome_PullToRrefress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chrome_PullToRrefress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B769B317B7C80ED65D6BD12 /* Pods-Chrome_PullToRrefress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrome_PullToRrefress.debug.xcconfig"; path = "Target Support Files/Pods-Chrome_PullToRrefress/Pods-Chrome_PullToRrefress.debug.xcconfig"; sourceTree = "<group>"; };
+		62DAFE7126427565001563A7 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		723583EC6E080DA95674A03F /* Pods-Chrome_PullToRrefress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrome_PullToRrefress.release.xcconfig"; path = "Target Support Files/Pods-Chrome_PullToRrefress/Pods-Chrome_PullToRrefress.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A4EF3342623EA9A00CE968C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCB3ADD4EE2B84942A79B40 /* Pods_Chrome_PullToRrefress.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A4EF32E2623EA9A00CE968C = {
+			isa = PBXGroup;
+			children = (
+				0A4EF3392623EA9A00CE968C /* Chrome_PullToRrefress */,
+				0A4EF3382623EA9A00CE968C /* Products */,
+				9E2CC2989BBE7C0E6B3F36D3 /* Pods */,
+				2C9074751185D1D66C035919 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0A4EF3382623EA9A00CE968C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A4EF3372623EA9A00CE968C /* Chrome_PullToRrefress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A4EF3392623EA9A00CE968C /* Chrome_PullToRrefress */ = {
+			isa = PBXGroup;
+			children = (
+				0A4EF3402623EA9A00CE968C /* Main.storyboard */,
+				0A4EF33E2623EA9A00CE968C /* ViewController.swift */,
+				62DAFE7126427565001563A7 /* ViewController2.swift */,
+				0A4EF36B2624311400CE968C /* ChormeSource */,
+				0A4EF3592623F6C100CE968C /* Extension */,
+				0A4EF34F2623EAA700CE968C /* Resource */,
+				0A4EF3482623EA9D00CE968C /* Info.plist */,
+			);
+			path = Chrome_PullToRrefress;
+			sourceTree = "<group>";
+		};
+		0A4EF34F2623EAA700CE968C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0A4EF33A2623EA9A00CE968C /* AppDelegate.swift */,
+				0A4EF33C2623EA9A00CE968C /* SceneDelegate.swift */,
+				0A4EF3432623EA9D00CE968C /* Assets.xcassets */,
+				0A4EF3452623EA9D00CE968C /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0A4EF3592623F6C100CE968C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0A4EF35A2623F6E500CE968C /* GoogleRefreshNode.swift */,
+				0A4EF36526241EC600CE968C /* UIImageExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0A4EF36B2624311400CE968C /* ChormeSource */ = {
+			isa = PBXGroup;
+			children = (
+				0A4EF3742624312A00CE968C /* ADChromePullToRefresh.swift */,
+				0A4EF36D2624312A00CE968C /* ADChromePullToRefreshActionView.swift */,
+				0A4EF3732624312A00CE968C /* ADChromePullToRefreshActionViewType.swift */,
+				0A4EF36C2624312900CE968C /* ADChromePullToRefreshCenterActionView.swift */,
+				0A4EF36F2624312A00CE968C /* ADChromePullToRefreshHighlightView.swift */,
+				0A4EF3722624312A00CE968C /* ADChromePullToRefreshLeftActionView.swift */,
+				0A4EF3712624312A00CE968C /* ADChromePullToRefreshRIghtActionView.swift */,
+				0A4EF36E2624312A00CE968C /* ADChromePullToRefreshState.swift */,
+				0A4EF3702624312A00CE968C /* ADChromePullToRefreshView.swift */,
+			);
+			path = ChormeSource;
+			sourceTree = "<group>";
+		};
+		2C9074751185D1D66C035919 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CC0CB8F8F608706588A68BD /* Pods_Chrome_PullToRrefress.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E2CC2989BBE7C0E6B3F36D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B769B317B7C80ED65D6BD12 /* Pods-Chrome_PullToRrefress.debug.xcconfig */,
+				723583EC6E080DA95674A03F /* Pods-Chrome_PullToRrefress.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A4EF3362623EA9A00CE968C /* Chrome_PullToRrefress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4EF34B2623EA9D00CE968C /* Build configuration list for PBXNativeTarget "Chrome_PullToRrefress" */;
+			buildPhases = (
+				8DDDE5B409C9E2318F915C3B /* [CP] Check Pods Manifest.lock */,
+				0A4EF3332623EA9A00CE968C /* Sources */,
+				0A4EF3342623EA9A00CE968C /* Frameworks */,
+				0A4EF3352623EA9A00CE968C /* Resources */,
+				8D6F7345D10EA13462F8666E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chrome_PullToRrefress;
+			productName = Chrome_PullToRrefress;
+			productReference = 0A4EF3372623EA9A00CE968C /* Chrome_PullToRrefress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A4EF32F2623EA9A00CE968C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					0A4EF3362623EA9A00CE968C = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 0A4EF3322623EA9A00CE968C /* Build configuration list for PBXProject "Chrome_PullToRrefress" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A4EF32E2623EA9A00CE968C;
+			productRefGroup = 0A4EF3382623EA9A00CE968C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A4EF3362623EA9A00CE968C /* Chrome_PullToRrefress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A4EF3352623EA9A00CE968C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4EF3472623EA9D00CE968C /* LaunchScreen.storyboard in Resources */,
+				0A4EF3442623EA9D00CE968C /* Assets.xcassets in Resources */,
+				0A4EF3422623EA9A00CE968C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D6F7345D10EA13462F8666E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chrome_PullToRrefress/Pods-Chrome_PullToRrefress-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chrome_PullToRrefress/Pods-Chrome_PullToRrefress-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chrome_PullToRrefress/Pods-Chrome_PullToRrefress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DDDE5B409C9E2318F915C3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chrome_PullToRrefress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A4EF3332623EA9A00CE968C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4EF35B2623F6E500CE968C /* GoogleRefreshNode.swift in Sources */,
+				0A4EF37A2624312A00CE968C /* ADChromePullToRefreshRIghtActionView.swift in Sources */,
+				0A4EF37B2624312A00CE968C /* ADChromePullToRefreshLeftActionView.swift in Sources */,
+				0A4EF33F2623EA9A00CE968C /* ViewController.swift in Sources */,
+				0A4EF33B2623EA9A00CE968C /* AppDelegate.swift in Sources */,
+				62DAFE7226427565001563A7 /* ViewController2.swift in Sources */,
+				0A4EF3782624312A00CE968C /* ADChromePullToRefreshHighlightView.swift in Sources */,
+				0A4EF36626241EC600CE968C /* UIImageExtension.swift in Sources */,
+				0A4EF3772624312A00CE968C /* ADChromePullToRefreshState.swift in Sources */,
+				0A4EF3752624312A00CE968C /* ADChromePullToRefreshCenterActionView.swift in Sources */,
+				0A4EF3792624312A00CE968C /* ADChromePullToRefreshView.swift in Sources */,
+				0A4EF37D2624312A00CE968C /* ADChromePullToRefresh.swift in Sources */,
+				0A4EF37C2624312A00CE968C /* ADChromePullToRefreshActionViewType.swift in Sources */,
+				0A4EF33D2623EA9A00CE968C /* SceneDelegate.swift in Sources */,
+				0A4EF3762624312A00CE968C /* ADChromePullToRefreshActionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A4EF3402623EA9A00CE968C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A4EF3412623EA9A00CE968C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A4EF3452623EA9D00CE968C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A4EF3462623EA9D00CE968C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A4EF3492623EA9D00CE968C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A4EF34A2623EA9D00CE968C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A4EF34C2623EA9D00CE968C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B769B317B7C80ED65D6BD12 /* Pods-Chrome_PullToRrefress.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LCCS7YAZ3;
+				INFOPLIST_FILE = Chrome_PullToRrefress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ken.Chrome-PullToRrefress";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A4EF34D2623EA9D00CE968C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 723583EC6E080DA95674A03F /* Pods-Chrome_PullToRrefress.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LCCS7YAZ3;
+				INFOPLIST_FILE = Chrome_PullToRrefress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ken.Chrome-PullToRrefress";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A4EF3322623EA9A00CE968C /* Build configuration list for PBXProject "Chrome_PullToRrefress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4EF3492623EA9D00CE968C /* Debug */,
+				0A4EF34A2623EA9D00CE968C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A4EF34B2623EA9D00CE968C /* Build configuration list for PBXNativeTarget "Chrome_PullToRrefress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4EF34C2623EA9D00CE968C /* Debug */,
+				0A4EF34D2623EA9D00CE968C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A4EF32F2623EA9A00CE968C /* Project object */;
+}

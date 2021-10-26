@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Pull to refresh giống như app google chorme
+
+
+2. Bao gồm
+- Các class của thư viện với tên tương tự
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
