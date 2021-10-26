@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test1 View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Test1ViewController" customModule="TestRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIq-F8-1hz">
+                                <rect key="frame" x="0.0" y="62" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzS-5F-cla">
+                                <rect key="frame" x="334" y="64" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6cF-Lw-dMC"/>
+                                    <constraint firstAttribute="height" constant="30" id="qTV-T2-8sh"/>
+                                </constraints>
+                                <state key="normal" title="Add People"/>
+                                <connections>
+                                    <action selector="btnAddTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="hTr-tY-mY7"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uTc-0Y-TI1">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uTc-0Y-TI1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1zu-NE-5gG"/>
+                            <constraint firstItem="cIq-F8-1hz" firstAttribute="centerY" secondItem="tzS-5F-cla" secondAttribute="centerY" id="FjV-mw-iqt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uTc-0Y-TI1" secondAttribute="bottom" id="KTT-Zf-1dc"/>
+                            <constraint firstItem="tzS-5F-cla" firstAttribute="leading" secondItem="cIq-F8-1hz" secondAttribute="trailing" id="Vij-cu-TEn"/>
+                            <constraint firstItem="tzS-5F-cla" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Zg8-X3-e1l"/>
+                            <constraint firstItem="uTc-0Y-TI1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="buQ-6a-h1Q"/>
+                            <constraint firstItem="uTc-0Y-TI1" firstAttribute="top" secondItem="cIq-F8-1hz" secondAttribute="bottom" constant="8" symbolic="YES" id="fTs-Y4-Y45"/>
+                            <constraint firstItem="cIq-F8-1hz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gsO-UG-cSW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tzS-5F-cla" secondAttribute="trailing" id="nnb-Hx-gld"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAdd" destination="tzS-5F-cla" id="6kH-1B-Uju"/>
+                        <outlet property="tblPeople" destination="uTc-0Y-TI1" id="4q6-AI-gvx"/>
+                        <outlet property="txtName" destination="cIq-F8-1hz" id="s1J-QO-BlL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

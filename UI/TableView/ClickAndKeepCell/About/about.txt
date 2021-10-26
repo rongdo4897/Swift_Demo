@@ -1,0 +1,18 @@
+1. Mô tả
+
+- Chạm giữ cell
+
+2. Bao gồm
+- Sử dụng Realm để lưu data
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
