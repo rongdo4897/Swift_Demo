@@ -1,0 +1,21 @@
+1. Mô tả
+
+- Chứa 10 animation cơ bản cho việc hiển thị cell
+
+- Chứa cả hiệu ứng Skeleton Cell (Hiệu ứng hiển thị khi tableview chưa có dữ liệu)
+
+
+2. Bao gồm
+- 
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
