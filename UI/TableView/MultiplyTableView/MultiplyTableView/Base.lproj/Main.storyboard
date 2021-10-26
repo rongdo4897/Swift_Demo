@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiplyTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ppp-KW-VDX">
+                                <rect key="frame" x="20" y="64" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ETs-Q0-MiF"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentTestValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="2vf-aC-MlV"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HKo-ki-xnc">
+                                <rect key="frame" x="20" y="134" width="374" height="240"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EZf-25-hkR">
+                                <rect key="frame" x="20" y="404" width="374" height="240"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EZf-25-hkR" firstAttribute="width" secondItem="HKo-ki-xnc" secondAttribute="width" id="7f5-pe-2IU"/>
+                            <constraint firstItem="EZf-25-hkR" firstAttribute="height" secondItem="HKo-ki-xnc" secondAttribute="height" id="7hp-zf-Wt9"/>
+                            <constraint firstItem="Ppp-KW-VDX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="D8i-sz-2zE"/>
+                            <constraint firstItem="Ppp-KW-VDX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="PzV-m8-eBt"/>
+                            <constraint firstItem="HKo-ki-xnc" firstAttribute="top" secondItem="Ppp-KW-VDX" secondAttribute="bottom" constant="30" id="Q4L-zt-X5y"/>
+                            <constraint firstItem="EZf-25-hkR" firstAttribute="centerX" secondItem="HKo-ki-xnc" secondAttribute="centerX" id="Udc-Nj-5Xc"/>
+                            <constraint firstItem="HKo-ki-xnc" firstAttribute="height" secondItem="Ppp-KW-VDX" secondAttribute="height" multiplier="6" id="Vgl-MV-woQ"/>
+                            <constraint firstItem="EZf-25-hkR" firstAttribute="top" secondItem="HKo-ki-xnc" secondAttribute="bottom" constant="30" id="e7C-8Z-X5r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ppp-KW-VDX" secondAttribute="trailing" constant="20" id="tp7-kt-Crl"/>
+                            <constraint firstItem="HKo-ki-xnc" firstAttribute="centerX" secondItem="Ppp-KW-VDX" secondAttribute="centerX" id="upW-5n-fPE"/>
+                            <constraint firstItem="HKo-ki-xnc" firstAttribute="width" secondItem="Ppp-KW-VDX" secondAttribute="width" id="zYA-oj-Rcb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentTest" destination="Ppp-KW-VDX" id="SfF-nY-3mT"/>
+                        <outlet property="tbl1" destination="HKo-ki-xnc" id="baS-Bz-9hw"/>
+                        <outlet property="tbl2" destination="EZf-25-hkR" id="YBk-fg-lYS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
