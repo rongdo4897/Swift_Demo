@@ -1,0 +1,20 @@
+1. Mô tả
+
+- Sử dụng thư viện Texture để xử lý giao diện
+
+2. Bao gồm
+- ASDKViewController thay cho ASViewController
+- ASNode
+- ...
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
