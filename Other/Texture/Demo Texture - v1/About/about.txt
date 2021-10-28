@@ -1,10 +1,11 @@
 1. Mô tả
 
 - Sử dụng thư viện Texture để xử lý giao diện
+- Khi xử dụng Texture sẽ giúp ứng dụng mượt mà và ứng dụng sẽ duy trì hiển thị khung hình mức 60fps
 
 2. Bao gồm
 - ASDKViewController thay cho ASViewController
-- ASNode
+- ASDisplayNode
 - ...
 
 
