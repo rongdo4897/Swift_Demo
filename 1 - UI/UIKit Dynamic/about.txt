@@ -1,0 +1,111 @@
+1. Giới thiệu
+
+- UIKit Dynamics là một bộ engine vật lý tích hợp vào UIKit framework được Apple giới thiệu cùng với sự xuất hiện của iOS7.
+
+- Bằng cách sử dụng UIKit Dynamics, chúng ta có thể tạo ra các view với những tương tác vật lý như trọng lực, móc nối, va chạm, nảy lên(sau va chạm),... giữa các đối tượng.
+
+- Cùng với việc sử dụng Motion effect (về cơ bản, motion effect sử dụng các cảm biến gia tốc của điện thoại để xác định khi người dùng nghiêng điện thoại, và thay đổi giao diện theo góc nghiêng để tạo chiều sâu cho giao diện), UIKit Dynamics hỗ trợ lập trình viên tạo ra các phần mềm "thật" hơn, giúp người dùng có những trải nghiệm tốt hơn, chân thực hơn, tương tác tốt hơn với ứng dụng.
+
+
+
+-----------------------------------------------------------------------------
+
+
+2. Các thành phần
+
+ 2.1. UIDynamicItem protocol
+
+ 2.2. Dynamic Behaviors
+    2.2.1. UIAttachmentBehavior
+    2.2.2. UICollisionBehavior
+    2.2.3. UIGravityBehavior
+    2.2.4. UIPushBehavior
+    2.2.5. UISnapBehavior
+    2.2.6. UIDynamicItemBehavior
+
+ 2.3. Dynamic Animator
+
+
+
+----------------------------------Chi tiết các thành phần-------------------------------------------
+
+
+
+
+2.1. UIDynamicItem protocol
+
+- UIDynamicItem protocol cung cấp các thuộc tính: bounds, center, transform cho engine UIKitDynamic theo dõi trạng thái của các đối tượng, trong đó:
+	+ Chỉ thuộc tính center là có thể read/write(đọc, ghi)
+	+ Thuộc tính transform chỉ sử dụng rotation transform
+
+- Mặc định, UIView và UICollectionViewLayoutAttributes được tích hợp UIDynamicItem protocol. ngoài ra lập trình viên có thể tự tạo các custom view tích hợp UIDynamicItem protocol
+
+
+				-------------------------
+
+2.2.1. UIAttachmentBehavior
+
+- Với UIAttachmentBehavior, chúng ta tạo mối liên kết giữa 2 đối tượng. Các đối tượng này có thể là
+	+ Một UIView với một UIView
+	+ Một UIView với một điểm cố định
+
+- Sau khi tạo ra liên kết giữa 2 đối tượng, khi 1 đối tượng chuyển động, đối tượng kia cũng chuyển động theo(tưởng tượng như có 1 sợi dây nối giữa 2 đối tượng, kéo đối tượng này thì đối tượng kia sẽ bị kéo theo)
+
+
+				-------------------------
+
+
+2.2.2. UICollisionBehavior
+
+- Với UICollisionBehavior, chúng ta có thể tạo hành vi va chạm cho các đối tượng của chúng ta, tạo các va chạm giữa các đối tượng hoặc tạo va chạm giữa đối tượng và bất kỳ 1 đường biên nào chúng ta định nghĩa trước.
+
+
+				-------------------------
+
+2.2.3. UIGravityBehavior
+
+- Với UIGravityBehavior, chúng ta có thể tạo hành vi trọng lực cho các đối tượng của mình. Sau khi tạo hành vi trọng lực, các đối tượng của chúng ta sẽ di chuyển rơi theo hướng của trọng lực.
+
+- Theo mặc định, hướng của trọng lực là hướng đáy của device. Chúng ta có thể xét hướng của trọng lực theo bất kỳ hướng nào chúng ta muốn
+
+
+				-------------------------
+
+2.2.4. UIPushBehavior
+
+- với UIPushBehavior, chúng ta cung cấp cho các đối tượng hành vi "đẩy", các đối tượng sẽ chịu lực đẩy theo 1 trong 2 kiểu sau:
+	+ UIPushBehaviorContinuousMode
+	+ UIPushBehaviorInstantaneousMode
+
+- khi khai báo UIPushBehavior, chúng ta phải khai báo kiểu cho UIPushBehavior, là 1 trong 2 kiểu ở trên.
+
+- Với kiểu UIPushBehaviorContinuousMode, đối tượng sẽ tăng tốc theo lực đẩy 1 cách từ từ (tưởng tượng như chúng ta tác dụng 1 lực vào 1 vật nặng, vật nặng đấy sẽ từ từ di chuyển nhanh dần). kiểu hành vi này thường thích hợp áp dụng cho các vật có trọng lượng.
+
+- Với kiểu UIPushBehaviorInstantaneousMode, đối tượng sẽ ngay lập tức tăng tốc với tốc độ của lực đẩy. kiểu hành vi này thường áp dụng cho các đối tượng mà không cần tính toán đến trọng lượng.
+
+
+				-------------------------
+
+2.2.5. UISnapBehavior
+
+- với UISnapBehavior, đối tượng của chúng ta sẽ được "gắn" vào 1 điểm. chúng ta có thể xét thuộc tính khoảng cách giao động của đối tượng tại điểm đó để đối tượng giao động trước khi dừng lại.
+
+- Để dễ dàng hình dung, các bạn hãy tưởng tượng khi sử dụng UISnapBehavior, UIView của các bạn được định sẵn 1 điểm cố định. UIView này sẽ di chuyển đến điểm cố định đấy, và tùy thuộc vào thuộc tính dao động mà UIView này sẽ dừng lại ngay lập tức (dao động bằng 0) hoặc sẽ dao động tắt dần quanh điểm cố định đấy đến khi dừng.
+
+
+				-------------------------
+
+2.2.6. UIDynamicItemBehavior
+
+- Ngoài những hành vi đã nói ở trên, Apple cung cấp cho chúng ta UIDynamicItemBehavior, hành vi mà chúng ta có thể xét nhiều thuộc tính hơn cho đối tượng chứ không chỉ là một hành vi như ở trên.
+
+- Ví dụ, nếu chúng ta cần xét hành vi cho một đối tượng vừa có khả năng va chạm, lại có thêm khối lượng, độ ma sát của đối tượng, đàn hồi,... thì chúng ta sẽ sử dụng UIDynamicItemBehavior
+
+
+				-------------------------
+
+2.3. Dynamic Animator
+
+- Dynamic Animator là trái tim, là phần quan trọng nhất của UIKit Dynamics. Một đối tượng Dynamic animator cung cấp cho các Dynamic Behaviors bối cảnh cho các hành động của các đối tượng, theo dõi các thuộc tính center, bounds, transform để cập nhật vị trí của đối tượng trong animation,...
+
+- Tuy nhiên, lập trình viên không phải quan tâm nhiều đến Dynamic Animator vì những việc này đã được Apple thực hiện cho chúng ta. Tất cả những gì chúng ta phải làm là tạo các behavior, Dynamic Animator sẽ giúp chúng ta xử lý những việc còn lại.
