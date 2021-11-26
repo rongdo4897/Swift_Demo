@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Ấn button và thả ra 1 loạt các view khác (tương tự thả tim Zalo)
+
+
+2. Bao gồm
+- 
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
