@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Di chuyển cell và Xóa cell sử dụng UIKit dynamic
+
+
+2. Bao gồm
+- 
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
