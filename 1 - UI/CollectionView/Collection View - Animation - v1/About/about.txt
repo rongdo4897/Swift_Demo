@@ -1,0 +1,21 @@
+1. Mô tả
+
+- Custom collection view Animation
+
+
+2. Bao gồm
+- Sử dụng thư viện Gemini
+
+- Tham khảo: https://github.com/shoheiyokoyama/Gemini
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
