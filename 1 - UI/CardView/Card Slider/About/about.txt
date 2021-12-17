@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Collection view được kéo ngang
+
+
+2. Bao gồm
+- Collection View
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 

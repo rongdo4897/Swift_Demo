@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Custom collection view then dạng trượt ngang
+
+
+2. Bao gồm
+- KVFlowLayout: UICollectionViewFlowLayout
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 

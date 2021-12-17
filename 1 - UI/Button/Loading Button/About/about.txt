@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Ấn button the button sẽ xoay indicator view bên trong
+
+
+2. Bao gồm
+- 
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 

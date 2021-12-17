@@ -1,0 +1,18 @@
+1. Mô tả
+
+- Sử dụng thư viện MJRefresh custom refresh control
+
+
+2. Bao gồm
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
