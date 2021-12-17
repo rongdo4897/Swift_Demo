@@ -1,0 +1,16 @@
+PODS:
+  - StackedCollectionView (3.0.0)
+
+DEPENDENCIES:
+  - StackedCollectionView
+
+SPEC REPOS:
+  trunk:
+    - StackedCollectionView
+
+SPEC CHECKSUMS:
+  StackedCollectionView: 38ea93408e2048309e293bcb71fff81f7cdbcb58
+
+PODFILE CHECKSUM: 9cebe2e6cc608cfa74d37b7c50d92ac19405d879
+
+COCOAPODS: 1.11.2
