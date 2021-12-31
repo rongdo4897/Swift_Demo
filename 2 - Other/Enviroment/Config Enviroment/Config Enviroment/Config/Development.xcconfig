@@ -1,0 +1,17 @@
+//
+//  Development.xcconfig
+//  Config Enviroment
+//
+//  Created by Hoang Lam on 31/12/2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Server URL
+ROOT_URL = http:/$()/12.1.13.20
+
+// Keys
+
+APP_NAME = TestEnv(Development)
+APP_BUNDLE_ID = com.testEnv.development
