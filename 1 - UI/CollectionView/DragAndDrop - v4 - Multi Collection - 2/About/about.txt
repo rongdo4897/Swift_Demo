@@ -1,0 +1,18 @@
+1. Mô tả
+
+- Kéo và thả cell giữa 2 hoặc nhiều collection
+
+
+2. Bao gồm
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 

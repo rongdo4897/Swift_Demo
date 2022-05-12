@@ -1,0 +1,18 @@
+1. Mô tả
+
+- Cấu hình môi trường cho dự án (gồm 3 môi trường: Development, Staging, Production)
+
+2. Bao gồm
+- 
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
