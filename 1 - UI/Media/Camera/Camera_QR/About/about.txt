@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Camera detect và quél mà QR (Tối đa 1 mã 1 lần nhận diện)
+
+
+2. Bao gồm
+- 1 khung layer được add trực tiếp vào camera layer và nó sẽ thay đổi kích thước và di chuyển đến mã qr, mã qr đó sẽ được quét và trả lại nội dung chứa trong nó
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
