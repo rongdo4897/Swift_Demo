@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Camera detect khuôn mặt và sau khi chụp sẽ trả về ảnh kèm điều kiện xem có khuôn mặt trong ảnh hay không
+
+
+2. Bao gồm
+- 1 khung layer được add trực tiếp vào camera layer và nó sẽ thay đổi kích thước và di chuyển theo khuôn mặt
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
