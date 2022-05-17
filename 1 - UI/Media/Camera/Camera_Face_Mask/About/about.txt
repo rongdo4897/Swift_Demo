@@ -1,0 +1,21 @@
+1. Mô tả
+
+- Camera detect khuôn mặt và phát hiện khuôn mặt có đang đeo mặt nạ hay không
+
+
+2. Bao gồm
+- 1 khung layer được add trực tiếp vào camera layer và nó sẽ thay đổi kích thước và di chuyển theo khuôn mặt
+
+- 1 ml model
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
