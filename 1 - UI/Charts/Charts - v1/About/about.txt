@@ -1,6 +1,6 @@
 1. Mô tả
 
-- 1 số dạng biểu đồ cơ bản
+- 1 số dạng biểu đồ cơ bản Pie, Line, Bar chart
 
 
 2. Bao gồm
