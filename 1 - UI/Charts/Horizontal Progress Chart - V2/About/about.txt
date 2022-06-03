@@ -1,0 +1,20 @@
+1. Mô tả
+
+- 1 dạng chart progress nằm ngang chia tỉ lệ các thành phần với màu và tỉ lệ % được truyền vào
+- Sử dụng thư viện
+
+
+2. Bao gồm
+- 
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
