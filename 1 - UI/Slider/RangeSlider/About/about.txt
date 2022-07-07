@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Thanh slider lựa chọn trong 1 khoảng dữ liệu
+
+
+2. Bao gồm
+- 
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
