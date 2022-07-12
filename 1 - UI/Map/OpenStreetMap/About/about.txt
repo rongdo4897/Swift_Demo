@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Tạo 1 lớp phủ từ OpenStreetMap và add nó vào WKWebView, map lúc này sẽ có giao diện từ lớp phủ
+
+
+2. Bao gồm
+- 
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
