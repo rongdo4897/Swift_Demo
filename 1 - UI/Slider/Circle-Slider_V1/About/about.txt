@@ -1,0 +1,19 @@
+1. Mô tả
+
+- Custom 1 circle slider với UIControl, nó được add pan gesture để thực hiện hành động kéo để thay dổi giá trị
+
+
+2. Bao gồm
+- 
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 

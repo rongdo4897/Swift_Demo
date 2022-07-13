@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OcJ-Q2-D6a">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Pjs-zB-GXf">
+            <objects>
+                <viewController id="OcJ-Q2-D6a" customClass="ViewController" customModule="CustomView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Til-LK-N56">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqx-p8-H8t" customClass="KnobView" customModule="CustomView" customModuleProvider="target">
+                                <rect key="frame" x="20" y="104" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ewy-tk-Bv0"/>
+                                    <constraint firstAttribute="height" constant="200" id="mK4-zJ-E4F"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="knowViewValueChange:" destination="OcJ-Q2-D6a" eventType="valueChanged" id="HOa-HF-rUC"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXd-i8-oNK">
+                                <rect key="frame" x="228" y="254" width="166" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IqF-rf-tcC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eIf-jh-l7t">
+                                <rect key="frame" x="18" y="312" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueValueChange:" destination="OcJ-Q2-D6a" eventType="valueChanged" id="fF1-NE-ebe"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fdG-TC-Pvn">
+                                <rect key="frame" x="182.5" y="383.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAnimatedValueChange:" destination="OcJ-Q2-D6a" eventType="valueChanged" id="1Aj-W3-m7O"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="animate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wn1-Jj-mQg">
+                                <rect key="frame" x="176.5" y="422.5" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zIQ-II-5LY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PXd-i8-oNK" firstAttribute="leading" secondItem="iqx-p8-H8t" secondAttribute="trailing" constant="8" id="0NE-fN-FMo"/>
+                            <constraint firstItem="eIf-jh-l7t" firstAttribute="leading" secondItem="iqx-p8-H8t" secondAttribute="leading" id="FyC-y2-7Mc"/>
+                            <constraint firstItem="fdG-TC-Pvn" firstAttribute="top" secondItem="eIf-jh-l7t" secondAttribute="bottom" constant="41.5" id="H3N-Zq-hnA"/>
+                            <constraint firstItem="iqx-p8-H8t" firstAttribute="leading" secondItem="zIQ-II-5LY" secondAttribute="leading" constant="20" id="Jti-Ni-VDP"/>
+                            <constraint firstItem="eIf-jh-l7t" firstAttribute="top" secondItem="iqx-p8-H8t" secondAttribute="bottom" constant="8" id="Ptc-4m-rUO"/>
+                            <constraint firstItem="wn1-Jj-mQg" firstAttribute="centerX" secondItem="fdG-TC-Pvn" secondAttribute="centerX" id="Xnc-8M-F2P"/>
+                            <constraint firstItem="wn1-Jj-mQg" firstAttribute="top" secondItem="fdG-TC-Pvn" secondAttribute="bottom" constant="8" id="ZMo-CV-8bo"/>
+                            <constraint firstItem="PXd-i8-oNK" firstAttribute="bottom" secondItem="iqx-p8-H8t" secondAttribute="bottom" id="luK-bd-ro8"/>
+                            <constraint firstItem="fdG-TC-Pvn" firstAttribute="centerX" secondItem="eIf-jh-l7t" secondAttribute="centerX" id="nFr-Ld-jE4"/>
+                            <constraint firstItem="zIQ-II-5LY" firstAttribute="trailing" secondItem="PXd-i8-oNK" secondAttribute="trailing" constant="20" id="sJ3-fK-dpH"/>
+                            <constraint firstItem="eIf-jh-l7t" firstAttribute="trailing" secondItem="PXd-i8-oNK" secondAttribute="trailing" id="sZ6-Uk-in6"/>
+                            <constraint firstItem="iqx-p8-H8t" firstAttribute="top" secondItem="zIQ-II-5LY" secondAttribute="top" constant="60" id="uNw-JS-89q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="knobView" destination="iqx-p8-H8t" id="vgO-WI-t5t"/>
+                        <outlet property="lblValue" destination="PXd-i8-oNK" id="62H-jY-Q0O"/>
+                        <outlet property="sliderValue" destination="eIf-jh-l7t" id="zDY-jb-ybt"/>
+                        <outlet property="switchAnimated" destination="fdG-TC-Pvn" id="YG2-YA-0rQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uUp-O0-Xam" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="128"/>
+        </scene>
+    </scenes>
+</document>
