@@ -1,0 +1,19 @@
+1. Mô tả
+
+- View đồng hồ có thể chạy được
+
+
+2. Bao gồm
+- 
+
+
+3. Tiến trình
+
+- Hoàn thành
+	+ 
+
+- Xem xét
+	+ 
+
+- Lỗi
+	+ 
