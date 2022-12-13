@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>19</key>
+	<string>キャリアセンスエラー</string>
+	<key>21</key>
+	<string>電波出力禁止</string>
+	<key>65</key>
+	<string>リーダー内のバッファフル</string>
+</dict>
+</plist>
