@@ -1,0 +1,5 @@
+1. Mô tả
+
+- Đây là dự án demo để xác định và đánh dấu vị trí của biển số xe trong luồng video.
+
+Link: https://github.com/dufflink/car-license-plate-detection
