@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Categories</key>
+	<dict>
+		<key>[1]Featured Apps</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>LIDAR Point Cloud</string>
+				<key>Description</key>
+				<string>The LIDAR Point Cloud demo showcases visualizing LIDAR data.</string>
+				<key>IconName</key>
+				<string>chart.series.scatter3d</string>
+				<key>FileName</key>
+				<string>LidarPointCloud</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>ECG Monitor</string>
+				<key>Description</key>
+				<string>The ECG Monitor showcases a real-time heart-rate monitor.</string>
+				<key>IconName</key>
+				<string>chart.realtime</string>
+				<key>FileName</key>
+				<string>ECGChartView</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Oscilloscope</string>
+				<key>Description</key>
+				<string>The Oscilloscope showcases Sorted and Unsorted Data Series in a real-time chart, while maintaining smooth interactivity and performance in a medium sized dataset (2,000-4,000 points per series).</string>
+				<key>IconName</key>
+				<string>chart.realtime</string>
+				<key>FileName</key>
+				<string>OscilloscopeChartView</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Vital Signs Monitor</string>
+				<key>Description</key>
+				<string>Showcases a real-time vital signs monitor</string>
+				<key>IconName</key>
+				<string>chart.realtime</string>
+				<key>FileName</key>
+				<string>VitalSignsMonitorChartView</string>
+				<key>IsSwiftOnly</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Audio Analyzer</string>
+				<key>Description</key>
+				<string>Showcases a real-time audio recorder</string>
+				<key>IconName</key>
+				<string>chart.realtime</string>
+				<key>FileName</key>
+				<string>AudioAnalyzerChartView</string>
+				<key>IsSwiftOnly</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

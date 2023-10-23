@@ -1,0 +1,5 @@
+.DS_Store
+**/xcuserdata/*
+**/SciChart.framework
+**/SciChart.xcframework
+**/Documentation/SCDocsOutput/*

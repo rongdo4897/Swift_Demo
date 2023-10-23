@@ -1,0 +1,22 @@
+{
+  "pins" : [
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift",
+      "state" : {
+        "revision" : "9dcaa4b333db437b0fbfaf453fad29069044a8b4",
+        "version" : "6.6.0"
+      }
+    },
+    {
+      "identity" : "scichart-sp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ABTSoftware/SciChart-SP",
+      "state" : {
+        "revision" : "baa999723385397c5967a714781fe4ded7c56f91"
+      }
+    }
+  ],
+  "version" : 2
+}
